@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="icon" href="../images/logos/icono.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css">
+        <title>Tienda Nova</title>
+    </head>
+    <body class="body">
+         <!-- Header -->
+         <header class="container-fluid bg-black py-2">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logos/logo-tienda.jpg" alt="Nova Logo" class="img-fluid logo" style="max-height: 50px;">
+                    </a>
+                    <!-- Menú hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="hombre.html">Hombre</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="mujer.html">Mujer</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="sale.html">Sale!</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+                <!--2. SEGUNDA ESTRUCTURA = CUERPO DE LA PAGINA-->
+        <main id="main">
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../images/page-sale/header.jpg" class="card-img-top header-mobile" alt="rebajas">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="carouselExampleIndicators" class="carousel slide container-fluid">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/page-sale/carrousel_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/page-sale/carrousel_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/page-sale/carrousel_3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../images/page-sale/consejo_1.jpg" class="card-img-top consejo-1" alt="rebajas">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../images/page-sale/consejo_2.jpg" class="card-img-top consejo-2" alt="rebajas">
+                        </div>
+                    </div>
+                    <h2 class="text-center mb-5 titulo-ofertas">COLECCIONES EN TENDENCIA</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/chaleco.jpg" class="card-img-top" alt="chaleco">
+                            <div class="card-body">
+                                <h5 class="card-title">Chaleco de Invierno</h5>
+                                <p class="card-text">$2.000,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/canguro.jpg" class="card-img-top" alt="canguro">
+                            <div class="card-body">
+                                <h5 class="card-title">Canguro Deportivo</h5>
+                                <p class="card-text">$1.500,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/poleron.jpg" class="card-img-top" alt="poleron">
+                            <div class="card-body">
+                                <h5 class="card-title">Polerón de Lana</h5>
+                                <p class="card-text">$1.800,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/campera.jpg" class="card-img-top" alt="campera">
+                            <div class="card-body">
+                                <h5 class="card-title">Campera Cafort - Negro</h5>
+                                <p class="card-text">$1.495,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/canguro_marron.jpg" class="card-img-top" alt="canguro">
+                            <div class="card-body">
+                                <h5 class="card-title">Canguro Marrón</h5>
+                                <p class="card-text">$1.350,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                            <img src="../images/page-sale/remera.jpg" class="card-img-top" alt="remera">
+                            <div class="card-body">
+                                <h5 class="card-title">Remera Básica</h5>
+                                <p class="card-text">$900,00</p>
+                                <a href="#" class="btn bg-danger-subtle btn-block">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <!-- Footer -->
+        <footer id="footer" class="footer-custom py-2">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center gap-4">
+                    <a href="https://www.instagram.com/javi.cercasi/" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://x.com/javicercasi?s=11" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-x-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Javi.cercasi?mibextid=LQQJ4d" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

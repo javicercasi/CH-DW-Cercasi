@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="icon" href="../images/logos/icono.ico" type="image/x-icon">
+        <link href="https:/cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+        <title>Tienda Nova</title>
+    </head>
+
+    <body class="body-catalogo">
+         <!-- Header -->
+         <header class="container-fluid bg-black py-2">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logos/logo-tienda.jpg" alt="Nova Logo" class="img-fluid logo" style="max-height: 50px;">
+                    </a>
+                    <!-- Menú hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Links de navegación -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="hombre.html">Hombre</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="mujer.html">Mujer</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="sale.html">Sale!</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!-- Cuerpo de la página -->
+        <main class="container-fluid body-catalogo">
+            <div class="row">
+                <!-- Filtros -->
+                <div class="col-md-3 g-1 my-2">
+                    <h4 class="text-center mb-4 titulo-filtros">Filtros</h4>
+                    <ul class="list-group filters mb-4">
+                        <li class="list-group-item filter-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalRemeras">Remeras</a>
+                        </li>
+                        <li class="list-group-item filter-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalZapatillas">Zapatillas</a>
+                        </li>
+                        <li class="list-group-item filter-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalCanguros">Canguros</a>
+                        </li>
+                        <li class="list-group-item filter-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalJeans">Jeans</a>
+                        </li>
+                        <li class="list-group-item filter-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalAccesorios">Accesorios</a>
+                        </li>
+                    </ul>
+
+                    <!-- Opciones de envío -->
+                    <div class="mb-2 filters">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="envioRapido">
+                            <label class="form-check-label" for="envioRapido">
+                                Envío Rápido
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="despachoGratis">
+                            <label class="form-check-label" for="despachoGratis">
+                                Despacho Gratis
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Productos -->
+                <div class="col-md-9 g-1 my-2">
+                        <h4 class="text-center mb-4 me-2 titulo-catalogo ">Colección de Productos</h4>
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/remera_1.jpg" class="card-img-top" alt="remera">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Remera Alden - Rosado</h5>
+                                        <p class="card-text">$8.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/remera_2.jpg" class="card-img-top" alt="remera">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Remera Rusty - Crudo</h5>
+                                        <p class="card-text">$4.090,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/remera_3.jpg" class="card-img-top" alt="remera">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Remera Kaler</h5>
+                                        <p class="card-text">$4.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/remera_4.jpg" class="card-img-top" alt="remera">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Remera Rusty</h5>
+                                        <p class="card-text">$6.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/zapatillas_1.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zapatilla Rusty - Camel</h5>
+                                        <p class="card-text">$99.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/zapatillas_2.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zapatilla Harold - Camel</h5>
+                                        <p class="card-text">$99.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/zapatillas_3.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zapatilla Nivo - Bordeaux</h5>
+                                        <p class="card-text">$121.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/zapatillas_4.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Zapatilla Haro - Bordeaux</h5>
+                                        <p class="card-text">$118.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/canguro_1.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canguro Rusty - Mostaza</h5>
+                                        <p class="card-text">$68.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/canguro_2.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canguro Rusty - Colores</h5>
+                                        <p class="card-text">$68.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/canguro_3.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canguro Timeo - Bordeaux</h5>
+                                        <p class="card-text">$68.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card mb-3 card-productos text-center" style="max-width: 18rem;">
+                                    <img src="../images/page-hombre/canguro_4.jpg" class="card-img-top" alt="zapatilla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canguro Indul - Negro</h5>
+                                        <p class="card-text">$68.000,00</p>
+                                        <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+    <!-- Modal Remeras -->
+            <div class="modal fade" id="modalRemeras" tabindex="-1" aria-labelledby="modalRemerasLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalRemerasLabel">Remeras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Lista de Remeras -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/remera_1.jpg" class="card-img-top" alt="remera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Remera Alden - Rosado</h5>
+                                            <p class="card-text">$8.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/remera_2.jpg" class="card-img-top" alt="remera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Remera Rusty - Crudo</h5>
+                                            <p class="card-text">$4.090,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/remera_3.jpg" class="card-img-top" alt="remera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Remera Kaler - Marron</h5>
+                                            <p class="card-text">$4.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/remera_4.jpg" class="card-img-top" alt="remera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Remera Rusty - Blanca</h5>
+                                            <p class="card-text">$6.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Modal Zapatillas -->
+            <div class="modal fade" id="modalZapatillas" tabindex="-1" aria-labelledby="modalZapatillasLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalZapatillasLabel">Zapatillas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Lista de Zapatillas -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                            <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/zapatillas_1.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zapatilla Rusty - Camel</h5>
+                                            <p class="card-text">$99.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/zapatillas_2.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zapatilla Haro - Camel</h5>
+                                            <p class="card-text">$99.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/zapatillas_3.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zapatilla Nivo - Bordó</h5>
+                                            <p class="card-text">$121.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/zapatillas_4.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zapatilla Harold - Bordó</h5>
+                                            <p class="card-text">$118.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Canguros -->
+            <div class="modal fade" id="modalCanguros" tabindex="-1" aria-labelledby="modalCangurosLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalCangurosLabel">Canguros</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Lista de Canguros -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/canguro_1.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canguro Mostaza</h5>
+                                            <p class="card-text">$68.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/canguro_2.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canguro Rusty - Colores</h5>
+                                            <p class="card-text">$68.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/canguro_3.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canguro Timeo - Bordó</h5>
+                                            <p class="card-text">$68.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/canguro_4.jpg" class="card-img-top" alt="zapatilla">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canguro Indul - Negro</h5>
+                                            <p class="card-text">$68.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Jeans -->
+            <div class="modal fade" id="modalJeans" tabindex="-1" aria-labelledby="modalJeansLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalJeansLabel">Jeans</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Lista de Jeans -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/jean_1.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jean Venom - Gris</h5>
+                                            <p class="card-text">$52.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/jean_2.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jean Poter - Azul</h5>
+                                            <p class="card-text">$50.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/jean_3.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jean Buster - Azul</h5>
+                                            <p class="card-text">$50.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/jean_4.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jean Rusty - Negro</h5>
+                                            <p class="card-text">$50.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Accesorios -->
+            <div class="modal fade" id="modalAccesorios" tabindex="-1" aria-labelledby="modalAccesoriosLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalJeansLabel">Accesorios</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Lista de Accesorios -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/accesorio_1.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gorro Baseball</h5>
+                                            <p class="card-text">$28.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/accesorio_2.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Billetera Dixie - Marron</h5>
+                                            <p class="card-text">$32.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/accesorio_3.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mochila Dixie - Gris</h5>
+                                            <p class="card-text">$71.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 card-productos text-center">
+                                        <img src="../images/page-hombre/accesorio_4.jpg" class="card-img-top" alt="jean">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Riñonera Rusty - Gris</h5>
+                                            <p class="card-text">$67.000,00</p>
+                                            <a href="#" class="btn btn-block bg-warning bg-opacity-75">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer-custom py-2">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center gap-4">
+                    <a href="https:/www.instagram.com/javi.cercasi/" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https:/x.com/javicercasi?s=11" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-x-twitter fa-2x"></i>
+                    </a>
+                    <a href="https:/www.facebook.com/Javi.cercasi?mibextid=LQQJ4d" target="_blank" class="text-dark">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https:/cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

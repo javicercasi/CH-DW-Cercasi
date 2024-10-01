@@ -1,0 +1,210 @@
+/* Estilos para el cuerpo */
+.body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/fondos/ropa-6.png");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2 {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.logo {
+    max-height: 60px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilos para la sección principal */
+section {
+    background-color: #f8f8f86e; /* Fondo claro */
+    padding: 25px;
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px auto;
+    max-width: 85%; /* Ancho máximo de la sección */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.548); /* Sombra ligera para darle profundidad */
+}
+
+
+
+.card-inicio {
+    background-color: #808080e3; /* Fondo claro */
+    padding: 4%;
+    border: #242c38;
+    font-size: 1.2em;
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0 auto; /* Centra las tarjetas individualmente */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-inicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Estilos para el contacto */
+section form {
+    background-color: #f8f8f85d;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.custom-input {
+    background-color: rgba(165, 201, 251, 0.2);
+    border: 1px solid #242c38;
+}
+
+/* Ajustar el tamaño de las palabras del menú de navegación */
+.nav-link {
+    color: #bfbfbf;
+    font-size: 1.1rem;
+}
+
+/* Hover en naranja oscuro */
+.nav-link:hover {
+    color: #ce9907 !important;
+
+}
+
+.footer-custom {
+    background-color: #f8f8f86e; /* Fondo claro */
+}
+
+#main {
+    min-height: 84vh;
+}
+
+
+
+/* Estilos para sales */
+
+.titulo-ofertas {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #121f47;
+    padding: 2rem;
+}
+
+.card-productos {
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0 auto; /* Centra las tarjetas individualmente */
+    border: 1px solid #242c38;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-productos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+
+/* Imágenes para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .consejo-1 {
+        content: url('./images/page-sale/consejo_3.jpg');
+    }
+    .consejo-2 {
+        content: url('./images/page-sale/consejo_4.jpg');
+    }
+    .header-mobile {
+        content: url('./images/page-sale/header_mobile.jpg');
+    }
+    section{
+        padding: 13px;
+        max-width: 95%;
+    }
+}
+
+/* ------------------- */
+/* Estilos para la pagina hombres.html */
+/* Estilos generales para la página del catálogo */
+.body-catalogo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(169, 169, 169, 0.358);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de la sección de filtros */
+.filters {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los items de la lista de filtros */
+.filter-item {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Efecto hover para cada item */
+.filter-item:hover {
+    background-color:rgb(135, 164, 222);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los enlaces */
+.filter-item a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    display: block;
+}
+
+/* Enlace hover */
+.filter-item:hover a {
+    color: #fff;
+}
+
+/* Estilo del título de la sección de filtros */
+.titulo-catalogo {
+    color: #000000;
+    font-weight: bold;
+    background-color: rgba(255, 193, 7, 0.735);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.titulo-filtros {
+    color: #000000;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+/* Estilos para los checkboxes de envío */
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.form-check-label {
+    color: #343a40;
+    font-weight: 500;
+}
+
+/* Estilo del checkbox al ser seleccionado */
+.form-check-input:checked, .form-check-label {
+    color: #000000;
+}

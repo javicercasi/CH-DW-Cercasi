@@ -33,7 +33,6 @@ h1, h2 {
   color: #bfbfbf;
   font-size: 1.1rem;
 }
-
 .nav-link:hover {
   color: #ce9907 !important;
 }
@@ -63,24 +62,20 @@ h1, h2 {
     max-width: 95%;
   }
 }
-/* Estilos para la pagina index.html */
 .card-inicio {
-  background-color: rgba(128, 128, 128, 0.8901960784); /* Fondo claro */
+  background-color: rgba(128, 128, 128, 0.8901960784);
   padding: 4%;
   border: #242c38;
   font-size: 1.2em;
-  border-radius: 8px; /* Bordes redondeados */
-  margin: 0 auto; /* Centra las tarjetas individualmente */
+  border-radius: 8px;
+  margin: 0 auto;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card-inicio:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para la pagina hombres.html */
-/* Estilo del título de la sección de filtros */
 .titulo-catalogo {
   color: #000000;
   font-weight: bold;
@@ -102,7 +97,6 @@ h1, h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de los items de la lista de filtros */
 .filter-item {
   background-color: #fff;
   border: none;
@@ -111,28 +105,21 @@ h1, h2 {
   padding: 1rem;
   border-radius: 8px;
 }
-
-/* Efecto hover para cada item */
 .filter-item:hover {
   background-color: rgb(135, 164, 222);
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilo de los enlaces */
 .filter-item a {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
   display: block;
 }
-
-/* Enlace hover */
-.filter-item:hover a {
+.filter-item a:hover {
   color: #fff;
 }
 
-/* Estilos generales para la página de catálogo (Hombre y Mujer) */
 .body-catalogo {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: rgba(169, 169, 169, 0.358);
@@ -141,18 +128,17 @@ h1, h2 {
 }
 
 .card-productos {
-  border-radius: 8px; /* Bordes redondeados */
-  margin: 0 auto; /* Centra las tarjetas individualmente */
+  border-radius: 8px;
+  margin: 0 auto;
   border: 1px solid #242c38;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card-productos:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-body h5 {
+.card-body h5 h5 {
   font-weight: bold;
 }
 
@@ -160,7 +146,6 @@ h1, h2 {
   width: 100%;
 }
 
-/* Estilos para los checkboxes de envío */
 .form-check {
   margin-bottom: 1rem;
 }
@@ -170,7 +155,6 @@ h1, h2 {
   font-weight: 500;
 }
 
-/* Estilo del checkbox al ser seleccionado */
 .form-check-input:checked, .form-check-label {
   color: #000000;
 }
@@ -183,7 +167,6 @@ h1, h2 {
   padding: 2rem;
 }
 
-/* Estilos para la pagina contacto.html */
 section form {
   background-color: rgba(248, 248, 248, 0.3647058824);
   font-size: 1.1em;
@@ -192,16 +175,9 @@ section form {
   margin: 20px;
 }
 
-/* Dudoso esto */
-.custom-input {
-  background-color: rgba(165, 201, 251, 0.2);
-  border: 1px solid #242c38;
-}
-
 .button__animation {
   transition: all 0.7s ease;
 }
-
 .button__animation:hover {
   background-color: rgba(248, 124, 22, 0.917);
   border-color: rgba(248, 124, 22, 0.917);

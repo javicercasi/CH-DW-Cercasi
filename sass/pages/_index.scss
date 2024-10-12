@@ -1,17 +1,16 @@
 
-/* Estilos para la pagina index.html */
-
+// Estilos para la pagina index.html
 .card-inicio {
-    background-color: #808080e3; /* Fondo claro */
+    background-color: #808080e3; // Fondo claro
     padding: 4%;
     border: #242c38;
     font-size: 1.2em;
-    border-radius: 8px; /* Bordes redondeados */
-    margin: 0 auto; /* Centra las tarjetas individualmente */
+    border-radius: 8px; // Bordes redondeados
+    margin: 0 auto; // Centra las tarjetas individualmente
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card-inicio:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }

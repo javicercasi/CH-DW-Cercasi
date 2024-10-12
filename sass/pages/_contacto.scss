@@ -1,0 +1,23 @@
+/* Estilos para la pagina contacto.html */
+section form {
+    background-color: #f8f8f85d;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Dudoso esto */
+.custom-input {
+    background-color: rgba(165, 201, 251, 0.2);
+    border: 1px solid #242c38;
+}
+
+.button__animation {
+    transition: all 0.7s ease;
+}
+  
+.button__animation:hover {
+    background-color: rgba(248, 124, 22, 0.917);
+    border-color: rgba(248, 124, 22, 0.917);
+}

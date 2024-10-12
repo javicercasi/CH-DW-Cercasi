@@ -1,0 +1,99 @@
+/* Estilos para la pagina hombres.html */
+
+/* Estilo del título de la sección de filtros */
+.titulo-catalogo {
+    color: #000000;
+    font-weight: bold;
+    background-color: rgba(255, 193, 7, 0.735);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.titulo-filtros {
+    color: #000000;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.filters {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los items de la lista de filtros */
+.filter-item {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Efecto hover para cada item */
+.filter-item:hover {
+    background-color:rgb(135, 164, 222);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los enlaces */
+.filter-item a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    display: block;
+}
+
+/* Enlace hover */
+.filter-item:hover a {
+    color: #fff;
+}
+
+
+/* Estilos generales para la página de catálogo (Hombre y Mujer) */
+.body-catalogo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(169, 169, 169, 0.358);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-productos {
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0 auto; /* Centra las tarjetas individualmente */
+    border: 1px solid #242c38;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-productos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+
+/* Estilos para los checkboxes de envío */
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.form-check-label {
+    color: #343a40;
+    font-weight: 500;
+}
+
+/* Estilo del checkbox al ser seleccionado */
+.form-check-input:checked, .form-check-label {
+    color: #000000;
+}

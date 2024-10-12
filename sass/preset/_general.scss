@@ -1,0 +1,28 @@
+/* Estilos compartidos por más de un archivo */
+.body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../images/fondos/ropa-6.png");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    min-height: 84vh;
+}
+
+section {
+    background-color: #f8f8f86e; /* Fondo claro */
+    padding: 25px;
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px auto;
+    max-width: 85%; /* Ancho máximo de la sección */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.548); 
+}
+
+h1,h2 {
+    color: #0056b3;
+    font-weight: bold;
+}
+

@@ -1,0 +1,17 @@
+/* Estilos de media queries */
+
+@media (max-width: 767px) {
+    .consejo-1 {
+        content: url('../images/page-sale/consejo_3.jpg');
+    }
+    .consejo-2 {
+        content: url('../images/page-sale/consejo_4.jpg');
+    }
+    .header-mobile {
+        content: url('../images/page-sale/header_mobile.jpg');
+    }
+    section{
+        padding: 13px;
+        max-width: 95%;
+    }
+}
